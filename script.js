@@ -29,14 +29,14 @@ function clock (){
   let months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   let days= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-  if (date === 1 || date === 21 || date === 31) {
-    return date + "st";
-  } else if (date === 2 || date === 22) {
-    return date + "nd";
-  } else if (date === 3 || date === 23) {
-    return date + "rd";
+  if (dd === 1 || dd === 21 || dd === 31) {
+    return dd + "st";
+  } else if (dd === 2 || dd === 22) {
+    return dd + "nd";
+  } else if (dd === 3 || dd === 23) {
+    return dd + "rd";
   } else {
-    return date + "th";
+    return dd + "th";
   }
 
   let wd = days[date.getDay()];
