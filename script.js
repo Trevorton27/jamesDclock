@@ -29,21 +29,22 @@ function clock (){
   let months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   let days= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-  if (dd === 1 || dd === 21 || dd === 31) {
-    return dd + "st";
-  } else if (dd === 2 || dd === 22) {
-    return dd + "nd";
-  } else if (dd === 3 || dd === 23) {
-    return dd + "rd";
-  } else {
-    return dd + "th";
-  }
-
   let wd = days[date.getDay()];
   let dd = date.getDate();
   let mm = months[date.getMonth()];
   let yyyy = date.getFullYear();
  
+  
+   if (dd === 01 || dd === 21 || dd === 31) {
+      dd = dd + "st";
+  } else if (dd === 02 || dd === 22) {
+      dd = dd + "nd";
+  } else if (dd === 03 || dd === 23) {
+      dd = dd + "rd";
+  } else {
+      dd = dd + "th";
+  }
+  
   let calendar = `${wd}, ${mm} ${dd} ${yyyy}`; 
 
   document.getElementById("date").innerText = calendar;
