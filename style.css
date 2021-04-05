@@ -4,3 +4,15 @@ body {
   text-align: center;
 }
 
+h2 {
+  font-size: 40px;
+}
+
+#clock {
+  margin-top: 10%;
+  font-size: 60px;
+}
+
+#date {
+  font-size: 45px;
+}
